@@ -40,13 +40,11 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 Still working on HTML semantics and CSS classes creation
 
-Tried to implement some SEO techniques to make the website more discoverable
+Tried to implement some SEO techniques to make the website more discoverable.
 
 ```html
-<meta charset="UTF-8">
   <meta name="author" content="Daniel Mut Torres">
-  <meta name="description" content="Quick omelette recipe page"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="Quick omelette recipe page">
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="ADD_SITE_LINK_HERE" />
 ```
@@ -61,7 +59,7 @@ In the CSS learned how to style the dots in unordered and ordered lists. Also, I
 
 ### Continued development
 
-In current projects I want to target Grid properties to continue enhancing mi responsiveness abilities. Also, is my goal to develop projects including JavaScript, in order to make my websites more interactive. Later on, I will dive into JS frameworks and libraries such as ReactJS.
+In current projects I want to target Grid properties to continue enhancing my responsiveness abilities. Also, is my goal to develop projects including JavaScript, in order to make my websites more interactive. Later on, I will dive into JS frameworks and libraries such as ReactJS.
 
 ### Useful resources
 
@@ -75,4 +73,4 @@ In current projects I want to target Grid properties to continue enhancing mi re
 
 ## Acknowledgments
 
-Eternally thankful to freeCodeCamp since there I learnt everything I know so far. Through their guided course for web developers I found a new passion! Also, my gratitude goes to Front End mentor for helping and creating such a wonderful platform to learn.
+Eternally thankful to freeCodeCamp since they served me as guidance for the web development career I am pursuing. Through their guided course for web developers I found a new passion! Also, my gratitude goes to Front End mentor for helping and creating such a wonderful platform to learn.
