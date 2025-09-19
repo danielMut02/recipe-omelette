@@ -1,0 +1,252 @@
+:root{
+    --white: hsl(0, 0%, 100%);
+    --stone_100: hsl(30, 54%, 90%);
+    --stone_150: hsl(30, 18%, 87%);
+    --stone_600: hsl(30, 10%, 34%);
+    --stone_900: hsl(24, 5%, 18%);
+    --brown_800: hsl(14, 45%, 36%);
+    --rose_800: hsl(332, 51%, 32%);
+    --rose_50: hsl(330, 100%, 98%);
+}
+
+/* young-serif-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Young Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/young-serif-v2-latin/young-serif-v2-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* outfit-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/outfit-v15-latin/outfit-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./assets/fonts/outfit-v15-latin/outfit-v15-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/outfit-v15-latin/outfit-v15-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--stone_100);
+    line-height: 1.5rem;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.recipe-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100vh;
+    background-color: var(--white);
+    margin: 8rem 0 2rem 0;
+    border-radius: 1.3rem;
+    align-items: justify;
+}
+
+.text{
+    padding: 0 3rem;
+    margin-bottom: 1.5rem;    
+    font-size: clamp(1rem, 1vw + 0.5rem, 1.05rem);
+}
+
+.omelette-picture{
+    margin: 2.3rem 2.5rem 0 2.5rem;
+    width: auto;
+    border-radius: 1rem;
+}
+
+.recipe-title{
+    color: var(--stone_900);
+    margin: 2.8rem 1.5rem 1.8rem 2.8rem;
+    font-family: 'Young Serif';
+    font-weight: 500;
+    font-size: clamp(2.3rem, 1.5vw + 1rem, 2.5rem);
+    line-height: 1.1;
+}
+
+.recipe-info{
+    margin: 0 0 2rem 0;
+    font-family: 'Outfit';
+    color: var(--stone_600);
+}
+
+.preparation-box{
+    background-color: var(--rose_50);
+    width: 100%;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1rem;
+    border-radius: 0.8rem;
+    font-family: "Outfit";
+    font-weight: 400;
+}
+
+.preparation-subtitle{
+    color: var(--rose_800);
+    font-weight: 800;
+    font-size: 1.125rem;
+    margin-bottom: 0.8rem;
+}
+
+.preparation__box__list-item{
+    margin: 0.5rem 0 0 2rem;
+    color: var(--rose_800);
+}
+
+.preparation__box__list-item::marker{
+    font-size: 0.7em;
+}
+
+.content{
+    margin-left: 1rem;
+    color: var(--stone_600);
+    font-weight: 400;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+.block{
+    border-bottom: 1px solid var(--stone_150);
+}
+
+.ingredients-list{
+    margin: 0 0 2rem 1.5rem;
+}
+
+.ingredients__list-item{
+    margin-top: 0.5rem;
+    color: var(--brown_800);
+}
+
+.ingredients__list-item::marker{
+    font-size: 0.7em;
+}
+
+.instructions-list{
+    margin: 0 1rem 2rem 1.5rem;
+    line-height: 1.3;
+}
+
+.instructions__list-item{
+    margin-top: 0.5rem;
+    color: var(--brown_800);
+    font-weight: bold;
+}
+
+.table-description{
+    margin-bottom: 0.8rem;
+    font-family: 'Outfit';
+    color: var(--stone_600);
+}
+
+.nutrition-property{
+    color: var(--stone_600);
+}
+
+.nutrition-value{
+    color: var(--brown_800);
+    font-weight: 800;
+}
+
+.nutritional-values-table{
+    width: 100%;
+}
+
+.nutritional-values-table td{
+    border-bottom: 0.08rem solid var(--stone_150);
+    padding: 0.5rem 1.5rem;
+}
+
+.nutritional-values-table tbody tr:last-of-type td{
+    border-bottom: none;
+}
+
+.section-title{
+    color: var(--brown_800);
+    font-weight: 400;
+    margin: 2rem 0 1.5rem 0;
+    font-family: 'Young Serif';
+    font-size: 1.8rem;
+}
+
+.list{
+    font-family: 'Outfit';
+}
+
+ @media (max-width: 475px) {
+      .recipe-card, .omelette-picture{
+        margin: 0;
+        border-radius: 0;
+      }
+
+      .omelette-picture{
+        width: 100%;
+      }
+
+      .recipe-title{
+        margin-left: 2rem;
+      }
+
+      .preparation-box{
+        padding: 1.2rem 1.5rem 1.5rem 1rem;
+      }
+
+      .preparation-subtitle{
+        margin-left: 0.65rem;
+      }
+
+      .text{
+        padding: 0 2rem;
+      }
+    }
+
+ @media (min-width: 480px) {
+    .recipe-card{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+ }
+
+.attribution { font-size: 0.75rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
